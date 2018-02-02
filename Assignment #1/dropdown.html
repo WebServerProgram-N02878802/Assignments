@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+body { margin: 0; }
+a { text-decoration: none; }
+
+.menu {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 20px;
+	list-style-type: none;
+	background-color:  #1a8cff;
+}
+
+.menu li {
+	display: block;
+	padding: 2px;
+}
+
+.menu>li {
+	display: inline-block;
+	width: 90px;
+}
+
+.dropdown ul {
+	display: none;
+	position: absolute;
+	width: 90px;
+	border: 2px solid #127;
+	margin-left: -5px;
+	padding: 0;
+}
+
+.menu li:hover{ background-color: #0099cc; }
+
+.dropdown:hover ul { display: block; }
+
+
+</style>
+</head>
+
+
+<body>
+  <ul class="menu">
+    <li class="dropdown">File
+		<ul>
+			<li><a href="#">Open</a></li>
+			<li><a href="#">Save</a></li>
+			<li><a href="#">Save As...</a></li>
+		</ul>
+	</li>
+	<li class="dropdown">Edit
+		<ul>
+			<li><a href="#">Cut</a></li>
+			<li><a href="#">Copy</a></li>
+			<li><a href="#">Paste</a></li>
+			<li><a href="#">Delete</a></li>
+		</ul>
+	</li>
+	<li class="dropdown">Options
+		<ul>
+			<li><a href="#">Edit Font</a></li>
+			<li><a href="#">Preferences...</a></li>
+		</ul>
+	</li>
+  </ul>
+</body>
+
+</html>
